@@ -1,0 +1,395 @@
+.overall-container{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+p{
+    margin: 0;
+}
+.nav{
+    min-height: 60rem;
+    max-width: 15%;
+    box-shadow: 0.1rem 0.1rem 0.2rem rgb(161, 161, 161);
+    margin-right: 1.5rem;
+    border-radius: 0.4rem;
+    position: relative;
+}
+main{
+    width: 55%;
+    margin-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.preview{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 1rem;
+    box-shadow: 0 0 0.4rem rgb(161, 161, 161);
+    border-radius: 0.4rem;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    font-size: xx-large;
+    color: rgb(33, 169, 58);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 0.4rem;
+}
+.logo i,
+.logo span{
+    margin-left: 0.2rem;
+}
+.top-nav span,
+.log-out{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: x-large;
+    margin-top: 0.9rem;
+    margin-bottom: 0.9rem;
+    padding: 0.5rem;
+    box-shadow: 0 0 0.3rem gray;
+    border-radius: 0.4rem;
+}
+.top-nav span p,
+.top-nav span i,
+.log-out i,
+.log-out span{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.highlights{
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    height: 10rem;
+    width: 100%;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    background-image: url('../Tools/download1.jpg');
+    background-size: cover;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+.highlight{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(113, 229, 97, 0.5);
+}
+.highlight p{
+    padding-top: 10%;
+}
+.log-out{
+    position: fixed;
+    width: 14rem;
+    bottom: 0;
+    left: 1rem;
+    right: 0;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 0 0.4rem gray;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+}
+header > p{
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 1rem;
+}
+.interact{
+    display: flex;
+    flex-direction: row;
+    font-size: x-large;
+}
+input,
+input:focus{
+    border: 0;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 0.4rem gray;
+    height: 2rem;
+}
+.interact > div{
+    margin-left: 2rem;
+}
+.interact > div p{
+    margin: 1rem;
+}
+.date div{
+    display: flex;
+    flex-direction: row;
+}
+.srch-loc div button{
+    font-size: medium;
+    background-color: blue;
+    border-radius: 0.3rem;
+    border: 0;
+    padding: 0.3rem;
+    color: white;
+}
+.main-content{
+    border: 0;
+    border-radius: 0.4rem;
+    box-shadow: 0 0 0.4rem gray;
+    padding: 0.5rem;
+    min-height: 46rem;
+}
+.heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem;
+    font-size: large;
+}
+.more{
+    color: blue;
+}
+.heading:first-child{
+    font-size: x-large;
+}
+.banners{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* justify-content: space-evenly; */
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    overflow-x:scroll;
+}
+.banner{
+    box-shadow: 0 0 0.4rem gray;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    height: 20rem;
+    width: 15rem;
+    margin-right: 0.8rem;
+    margin-left: 0.8rem;
+}
+.banner .image{
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.name{
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+.desc span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.address{
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: rgb(85, 85, 85);
+}
+.price{
+    font-size: large;
+    font-weight: bold;
+}
+select,
+select:focus{
+    border: 0;
+    padding: 0.3rem;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+.exploring{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: large;
+    font-weight: bold;
+}
+.filtrates{
+    margin: 0.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.filtrate{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 15rem;
+    height: 5rem;
+    box-shadow: 0 0 0.4rem gray;
+    border-top-left-radius: 3rem;
+    /* border-bottom-left-radius: 1rem; */
+    /* border-top-right-radius: 1rem; */
+    border-bottom-right-radius: 3rem;
+    padding-right: 0.5rem;
+    margin: 0.5rem;
+}
+.about{
+    margin-left: 0.5rem;
+}
+.filtrate .image{
+    width: 8rem;
+    height: 100%;
+    overflow: hidden;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 3rem;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 4rem;
+    padding: 0.2rem;
+}
+.header .image{
+    height: 4rem;
+    width: 4rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.header i{
+    margin-left: 4rem;
+}
+.about-profile{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+    margin-right: 3rem;
+}
+.acc-name{
+    font-size: large;
+    font-weight: bold;
+}
+.acc-desc{
+    color: rgb(105, 105, 104);
+}
+hr{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.select-name{
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+.gallery .image{
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 98%;
+    height: 15rem;
+    margin: auto;
+    margin-bottom: 0.5rem;
+}
+.preview-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 10rem;
+}
+.left-images{
+    width: 55%;
+    margin-left: 0.2rem;
+}
+.image1{
+    min-height: 100%;
+    width: 45%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.image2{
+    width: 100%;
+    height: 48%;
+    margin-bottom: 0.2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.image3{
+    width: 100%;
+    height: 48%;
+    text-align: center;
+    background-image: url('../Tools/images1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.mask{
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding-top: 1.3rem;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: rgba(22, 37, 11, 0.4);
+    border-radius: 0.5rem;
+}
+.select-profile{
+    padding: 0.3rem;
+}
+.select-preview{
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.details {
+    margin-bottom: 1rem;
+}
+.preview-display{
+    padding: 0.5rem;
+    height: 5rem;
+}
+.select-address{
+    display: flex;
+    flex-direction: column;
+}
+.location{
+    height: 6rem;
+    width: 98%;
+    margin: auto;
+    border: 0.1rem gray solid;
+    margin-bottom: 0.2rem;
+    border-radius: 0.3rem;
+}
+.select-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 00.3rem;
+    background-color: blue;
+    color: white;
+    border: 0;
+}
+.select-price #duration{
+    background-color: blue;
+    color: white;
+}
