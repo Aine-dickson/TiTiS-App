@@ -8,7 +8,13 @@ body{
 .overall-container{
     display: flex;
     flex-direction: row;
+    /* justify-content: space-between; */
     height: 100%;
+}
+.side-catch{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 img{
     height: 100%;
@@ -29,6 +35,7 @@ img{
     border-radius: 0.4rem;
     overflow: hidden;
     background-color: rgb(136, 78, 78);
+    box-shadow: 0 0 0.3rem blue;
 }
 .overlay{
     position: absolute;
@@ -38,10 +45,11 @@ img{
     right: 0;
     background-color: rgba(240, 248, 255, 0.4);
     padding: 0.25rem;
+    display: flex;
+    align-items: center;
 }
 .overlay p{
     position: absolute;
-    top: 4.5rem;
     text-align: center;
     color: blue;
     font-weight: 600;
@@ -74,9 +82,11 @@ img{
     max-width: 10rem;
 }
 .home-main{
-    min-width: 20%;
-    max-width: 60%;
+    min-width: 60%;
     width: auto;
+}
+.home-right{
+    min-width: 20%;
 }
 .logo{
     margin: 1rem 0.5rem;
@@ -106,6 +116,226 @@ img{
 }
 .location{
     display: flex;
+    margin-top: 1rem;
+}
+.location input,
+.location input:focus{
+    outline: none;
+    border: 0;
+    border-bottom: 0.1rem solid;
+}
+.location input[type = "search"]{
+    width: 8rem;
+}
+.location div:first-child{
+    position: relative;
+}
+.location button{
+    color: white;
+    background-color: blue;
+    border: 0.1rem solid;
+    border-radius: 0.3rem;
+}
+.date > div,
+.srch > div{
+    display: flex;
+    margin: 0.5rem;
+}
+.window-display{
+    padding: 0.3rem;
+}
+.window-display article:first-child{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: large;
+    font-weight: 550;
+}
+.extend{
+    color: blue;
+    font-size: medium;
+    font-style: italic;
+}
+.hr-scroll{
+    min-width: 100%;
+    width: auto;
+    display: flex;
+    padding: 0.7rem;
+    overflow: hidden;
+    background-color: aliceblue;
+}
+.window-item{
+    min-height: 10rem;
+    max-height: 21rem;
+    box-shadow: 0 0 0.4rem;
+    border-radius: 0.4rem;
+    overflow: hidden;
+}
+.window-item .image{
+    height: 15rem;
+    min-width: 8rem;
+}
+.window-desc{
+    padding: 0.3rem;
 }
 
-
+.w-item-address{
+    display: flex;
+}
+.w-item-address > span{
+    margin: 0.2rem;
+}
+.fa-chevron-down{
+    color: blue;
+    text-shadow: 0 0 0.3rem;
+}
+.filtered-display{
+    height: auto;
+    margin-top: 0.5rem;
+    padding: 0.2rem;
+}
+.filter-formats,
+.info-formats{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.vr-scroll{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    width: auto;
+}
+.filtrate{
+    display: flex;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 0 0.3rem;
+    margin-left: 0.2rem;
+}
+.filtrate > div:last-child{
+    padding: 0.2rem;
+}
+.filtrate .image{
+    height: 4rem;
+    width: 3rem;
+}
+.vr-line{
+    border-left: 0.1rem solid gray;
+    margin: 0 0.3rem;
+    box-shadow: 0 0 0.2rem gray;
+}
+.user-profile{
+    display: flex;
+    align-items: center;
+    padding: 0.1rem;
+}
+.profile-pic{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.user-overview{
+    margin: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    font-weight: bold;
+    max-width: 10rem;
+}
+.user-about{
+    display: block;
+    font-size: small;
+    font-style: italic;
+    font-weight: 100;
+    color: gray;
+    height: 1rem;
+    width: 100%;
+    width: auto;
+    overflow-x: hidden;
+}
+.cover-image{
+    height: 10rem;
+    min-width: 100%;
+    /* max-width: 100%; */
+    margin: auto;
+    box-shadow: 0 0 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.cover-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.preview-container{
+    display: flex;
+    align-items: center;
+}
+.preview-container > .preview-image{
+    height: 10.2rem;
+    border-radius: 0.4rem;
+    overflow: hidden;
+}
+.preview-container > div:last-child{
+    margin-left: 0.2rem;
+    height: 10.2rem;
+    overflow: hidden;
+}
+.preview-container > div:last-child > div{
+    height: 5rem;
+    margin-bottom: 0.2rem;
+    border-radius: 0.4rem;
+    overflow: hidden;
+}
+.more-images{
+    position: relative;
+}
+.more-images span{
+    width: 2rem;
+    margin: auto;
+    font-size: x-large;
+    font-weight: bold;
+    color: blue;
+}
+.select-info{
+    margin-top: 1rem;
+}
+.select-location{
+    position: absolute;
+    bottom: 0.2rem;
+    height: 8.5rem;
+    min-width: 100%;
+}
+.map{
+    height: 5rem;
+    min-width: 80%;
+    max-width: 80%;
+    border: 0.1rem solid gray;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    margin: auto;
+}
+.select-price{
+    padding-left: 3rem;
+}
+.select-location button{
+    display: block;
+    background-color: blue;
+    border: 0;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    color: white;
+    min-width: 70%;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 0.2rem;
+}
+.hidden{
+    display: none;
+}
