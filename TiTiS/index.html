@@ -10,315 +10,182 @@
 </head>
 <body>
     <div class="overall-container">
-        <aside class="nav">
+        <section class="home-left">
             <div class="logo">
-                <i class=" fas fa-venus-double"></i>
-                <span class="site-name">BooB</span>
+                <span class="c-logo"><i class="fas fa-bars"></i></span>
+                <span class="c-name">Name</span>
             </div>
-            <div class="top-nav">
-                <span>
-                    <i class="fas fa-home"></i>
-                    <p>Dashboard</p>
-                </span>
-                <span>
-                    <i class="fas fa-braille"></i>
-                    <p>Explore city</p>
-                </span>
-                <span>
-                    <i class="fas fa-bell"></i>
-                    <p>Notifications</p>
-                </span>
-                <span>
-                    <i class="fas fa-heart"></i>
-                    <p>Favorite</p>
-                </span>
-                <span>
-                    <i class="fas fa-cog"></i>
-                    <p>Settings</p>
-                </span>
-            </div>
-            <div class="highlights">
-                <div class="highlight">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ratione.</p>
+            <nav class="nav-menu">
+                <div class="menu-item dashboard">
+                    <span><i class="fas fa-home"></i></span>
+                    <span>Dashboard</span>
                 </div>
+                <div class="menu-item explore">
+                    <span><i class="fas fa-home"></i></span>
+                    <span>Explore city</span>
+                </div>
+                <div class="menu-item notifications">
+                    <span><i class="fas fa-bell"></i></span>
+                    <span>Notifications</span>
+                </div>
+                <div class="menu-item favorites">
+                    <span><i class="fas fa-heart"></i></span>
+                    <span>Favorites</span>
+                </div>
+                <div class="menu-item settings">
+                    <span><i class="fas fa-cog"></i></span>
+                    <span>Settings</span>
+                </div>
+            </nav>
+            <article class="highlights">
+                <div class="overlay">
+                    <div class="image">
+                        <img src="./Tools/alex.jpg" alt="">
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, rem.</p>
+                </div>
+            </article>
+            <div class="log">
+                <span class="log-in">Log In</span>
+                <span class="log-out">Log Out</span>
             </div>
-            <div class="log-out">
-                <i class="fas fa-sign-out-alt"></i>
-                <span>Log out</span>
-            </div>
-        </aside>
-        <main>
-            <header>
-                <p>Find a hotel to stay!</p>
-                <section class="interact">
-                    <div class="date">
-                        <p>Date</p>
+        </section>
+        <main class="home-main">
+            <article class="booking">
+                <div>
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <div class="location">
+                        <article class="date">
+                            <span>Date</span>
+                            <div>
+                                <span><i class="fas fa-calendar"></i></span>
+                                <input type="date">
+                            </div>
+                        </article>
+                        <article class="srch">
+                            <span><input type="search"></span>
+                            <span><button type="submit">Search</button></span>
+                        </article>
+                    </div>
+                </div>
+            </article>
+            <section class="window-display">
+                <article>
+                    <span>Lodging available</span>
+                    <span class="extend">See more</span>
+                </article>
+                <article class="hr-scroll">
+                    <div class="window-item">
+                        <div class="image">
+                            <img src="" alt="">
+                        </div>
+                        <article class="window-desc">
+                            <span class="w-item-name">Aine Dixon</span>
+                            <div class="w-item-address">
+                                <span><i class="fas fa-map"></i></span>
+                                <address class="address">Entebbe road Street 1</address>
+                            </div>
+                            <div class="w-item-price">
+                                <span class="price">@$23</span>
+                                <div class="duretion-selections">
+                                    <span>/Night</span>
+                                    <span>/Day</span>
+                                    <span>/Hour</span>
+                                </div>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </article>
+                    </div>
+                </article>
+            </section>
+            <section class="filtered-display">
+                <nav class="filter-formats">
+                    <span id="popular">Most popular</span>
+                    <span id="offer">Special offers</span>
+                    <span id="near">Near me</span>
+                </nav>
+                <div class="vr-scroll">
+                    <article class="filtrate">
+                        <div class="image">
+                            <img src="" alt="">
+                        </div>
+                        <div class="vr-line"></div>
                         <div>
-                            <span><i class="fas fa-calendar-alt"></i></span>
-                            <input type="date">
+                            <address class="address">Lorem, ipsum dolor.</address>
+                            <span class="f-name">Aine Dixon</span>
                         </div>
-                    </div>
-                    <div class="srch-loc">
-                        <p>Where to?</p>
-                        <div>
-                            <input type="text" placeholder="Search place here">
-                            <button type="submit">Search</button>
-                        </div>
-                    </div>
-                </section>
-            </header>
-            <section class="main-content">
-                <div class="heading">
-                    <p>Lodging available</p>
-                    <p class="more">See more...</p>
-                </div>
-                <div class="banners">
-                    <div class="banner">
-                        <div class="image">
-                            <img src="./Tools/download0.jpg" alt="">
-                        </div>
-                        <div class="desc">
-                            <p class="name">Mariam</p>
-                            <span>
-                                <i class="fas fa-map-marker-alt"></i>
-                                <p class="address">St John Road Street 2</p>
-                            </span>
-                            <span>
-                                <p class="price">@22$</p>
-                                <select name="duration" id="duration">
-                                    <option value="night">/Night</option>
-                                    <option value="day">/Day</option>
-                                    <option value="hour">/Hour</option>
-                                </select>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="banner">
-                        <div class="image">
-                            <img src="./Tools/download1.jpg" alt="">
-                        </div>
-                        <div class="desc">
-                            <p class="name">Mariam</p>
-                            <span>
-                                <i class="fas fa-map-marker-alt"></i>
-                                <p class="address">St John Road Street 2</p>
-                            </span>
-                            <span>
-                                <p class="price">@22$</p>
-                                <select name="duration" id="duration">
-                                    <option value="night">/Night</option>
-                                    <option value="day">/Day</option>
-                                    <option value="hour">/Hour</option>
-                                </select>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="banner">
-                        <div class="image">
-                            <img src="./Tools/download2.jpg" alt="">
-                        </div>
-                        <div class="desc">
-                            <p class="name">Mariam</p>
-                            <span>
-                                <i class="fas fa-map-marker-alt"></i>
-                                <p class="address">St John Road Street 2</p>
-                            </span>
-                            <span>
-                                <p class="price">@22$</p>
-                                <select name="duration" id="duration">
-                                    <option value="night">/Night</option>
-                                    <option value="day">/Day</option>
-                                    <option value="hour">/Hour</option>
-                                </select>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="banner">
-                        <div class="image">
-                            <img src="./Tools/download3.jpg" alt="">
-                        </div>
-                        <div class="desc">
-                            <p class="name">Mariam</p>
-                            <span>
-                                <i class="fas fa-map-marker-alt"></i>
-                                <p class="address">St John Road Street 2</p>
-                            </span>
-                            <span>
-                                <p class="price">@22$</p>
-                                <select name="duration" id="duration">
-                                    <option value="night">/Night</option>
-                                    <option value="day">/Day</option>
-                                    <option value="hour">/Hour</option>
-                                </select>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="exploring">
-                    <div class="menu">
-                        <span>Most popular</span>
-                        <span>Special offers</span>
-                        <span>Near me</span>
-                    </div>
-                    <div class="filtrates">
-                        <div class="filtrate">
-                            <div class="image">
-                                <img src="./Tools/download0.jpg" alt="">
-                            </div>
-                            <div class="about">
-                                <p class="address">Ruwum Street</p>
-                                <span class="name">Sarah</span>
-                            </div>
-                            <span class="price">@23$</span>
-                        </div>
-                        <div class="filtrate">
-                            <div class="image">
-                                <img src="./Tools/images0.jpg" alt="">
-                            </div>
-                            <div class="about">
-                                <p class="address">Ruwum Street</p>
-                                <span class="name">Sarah</span>
-                            </div>
-                            <span class="price">@23$</span>
-                        </div>
-                        <div class="filtrate">
-                            <div class="image">
-                                <img src="./Tools/images1.jpg" alt="">
-                            </div>
-                            <div class="about">
-                                <p class="address">Ruwum Street</p>
-                                <span class="name">Sarah</span>
-                            </div>
-                            <span class="price">@23$</span>
-                        </div>
-                        <div class="filtrate">
-                            <div class="image">
-                                <img src="./Tools/images2.jpg" alt="">
-                            </div>
-                            <div class="about">
-                                <p class="address">Ruwum Street</p>
-                                <span class="name">Sarah</span>
-                            </div>
-                            <span class="price">@23$</span>
-                        </div>
-                        <div class="filtrate">
-                            <div class="image">
-                                <img src="./Tools/images3.jpg" alt="">
-                            </div>
-                            <div class="about">
-                                <p class="address">Ruwum Street</p>
-                                <span class="name">Sarah</span>
-                            </div>
-                            <span class="price">@23$</span>
-                        </div>
-                        <div class="filtrate">
-                            <div class="image">
-                                <img src="./Tools/images00.jpg" alt="">
-                            </div>
-                            <div class="about">
-                                <p class="address">Ruwum Street</p>
-                                <span class="name">Sarah</span>
-                            </div>
-                            <span class="price">@23$</span>
-                        </div>
-                        <div class="filtrate">
-                            <div class="image">
-                                <img src="./Tools/images001.jpg" alt="">
-                            </div>
-                            <div class="about">
-                                <p class="address">Ruwum Street</p>
-                                <span class="name">Sarah</span>
-                            </div>
-                            <span class="price">@23$</span>
-                        </div>
-                        <div class="filtrate">
-                            <div class="image">
-                                <img src="./Tools/download2.jpg" alt="">
-                            </div>
-                            <div class="about">
-                                <p class="address">Ruwum Street</p>
-                                <span class="name">Sarah</span>
-                            </div>
-                            <span class="price">@23$</span>
-                        </div>
-                        <div class="filtrate">
-                            <div class="image">
-                                <img src="./Tools/IMG-20221004-WA0047.jpg" alt="">
-                            </div>
-                            <div class="about">
-                                <p class="address">Ruwum Street</p>
-                                <span class="name">Sarah</span>
-                            </div>
-                            <span class="price">@23$</span>
-                        </div>
-                    </div>
+                        <span class="price">@$23</span>
+                    </article>
                 </div>
             </section>
         </main>
-        <aside class="preview">
-            <section class="header">
-                <div class="image">
-                    <img src="./Tools/download0.jpg" alt="">
+        <aside class="home-right">
+            <section class="user-profile">
+                <div class="profile-pic">
+                    <img src="" alt="">
                 </div>
-                <div class="about-profile">
-                    <span class="acc-name">Kelly Daniels</span>
-                    <span class="acc-desc">Tycoon Player</span>
+                <div class="user-overview">
+                    <span class="user-name">Aine Dixon</span>
+                    <span class="user-about">Lorem, ipsum.</span>
                 </div>
-                <i class="fas fa-chevron-down"></i>
+                <span><i class="fas fa-chevron-down"></i></span>
             </section>
             <hr>
-            <section class="selected">
-                <div class="select-profile">
-                    <p class="select-name">Shakira Shantel</p>
-                    <div class="gallery">
-                        <div class="profile-image">
-                            <div class="image">
-                                <img src="./Tools/download1.jpg" alt="">
-                            </div>
+            <section class="selected-item">
+                <div class="gallery">
+                    <article class="select-cover">
+                        <span class="select-name">Aine Dixon</span>
+                        <div class="cover-image">
+                            <img src="" alt="">
                         </div>
-                        <div class="preview-images">
-                            <div class="image1">
-                                <img src="./Tools/download2.jpg" alt="">
+                    </article>
+                    <article class="select-preview">
+                        <span class="h3">Preview</span>
+                        <section class="preview-container">
+                            <div class="preview-image">
+                                <img src="" alt="">
                             </div>
-                            <div class="left-images">
-                                <div class="image2">
-                                    <img src="./Tools/download0.jpg" alt="">
-                                </div>
-                                <div class="image3">
-                                    <div class="mask">
-                                        8+
-                                    </div>
+                            <div class="preview-image">
+                                <img src="" alt="">
+                            </div>
+                            <div class="preview-image">
+                                <img src="" alt="">
+                                <div class="overlay">
+                                    <span>+16</span>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </section>
+                    </article>
                 </div>
-                <div class="select-preview">
-                    <div class="details">
-                        <div class="menu">
-                            <span>Overview</span>
-                            <span>Facilities</span>
-                            <span>Reviews</span>
+                <div class="select-info">
+                    <section class="select-details">
+                        <nav class="info-formats">
+                            <span id="overview">Overview</span>
+                            <span id="facilities">Facilities</span>
+                            <span id="reviews">Reviews</span>
+                        </nav>
+                        <div class="info-display">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, debitis.</p>
                         </div>
-                        <div class="preview-display">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum excepturi harum aliquid!</p>
+                    </section>
+                </div>
+                <div class="select-location">
+                    <span class="h3">Location</span>
+                    <div class="map"></div>
+                    <div class="select-price">
+                        <span class="price">@$23</span>
+                        <div class="duretion-selections">
+                            <span>/Night</span>
+                            <span>/Day</span>
+                            <span>/Hour</span>
                         </div>
-                    </div>
-                    <div class="select-address">
-                        <p class="name">Location</p>
-                        <div class="location"></div>
-                        <button class="select-price">
-                            <p class="price">@18$</p>
-                            <select name="duration" id="duration">
-                                <option value="night">/Night</option>
-                                <option value="day">/Day</option>
-                                <option value="hour">/Hour</option>
-                            </select>
-                        </button>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
                 </div>
             </section>
         </aside>
     </div>
+    <script src="./Scripts/jquery-3.6.1.js"></script>
+    <script src="./Scripts/script.js"></script>
 </body>
 </html>
